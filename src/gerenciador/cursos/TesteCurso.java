@@ -1,5 +1,7 @@
 package gerenciador.cursos;
 
+import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class TesteCurso {
@@ -13,5 +15,10 @@ public class TesteCurso {
         System.out.println(javaColecoes.getAulas());
         System.out.println(javaColecoes.getTempoTotal());
         System.out.println(javaColecoes);
+
+        List<Aula> aulas = new LinkedList<>(javaColecoes.getAulas());
+
+        aulas.sort(Comparator.comparing(Aula::getTempo));
+        System.out.println(aulas);
     }
 }
