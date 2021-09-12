@@ -10,6 +10,8 @@ public class TesteCurso {
         javaColecoes.adiciona(new Aula("Criando uma aula", 20));
         javaColecoes.adiciona(new Aula("Modelando coleções", 22));
 
-
+        System.out.println(javaColecoes.getAulas());
+        System.out.println(javaColecoes.getTempoTotal());
+        System.out.println(javaColecoes);
     }
 }
