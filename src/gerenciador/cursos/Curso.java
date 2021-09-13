@@ -37,6 +37,6 @@ public class Curso {
 
     @Override
     public String toString() {
-        return "[Curso: " + this.nome + ", tempo total: " + this.getTempoTotal() + "]";
+        return "[Curso: " + this.nome + ", tempo total: " + this.getTempoTotal() + ", aulas: " + aulas + "]";
     }
 }
