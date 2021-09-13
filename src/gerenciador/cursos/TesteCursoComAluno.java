@@ -17,5 +17,8 @@ public class TesteCursoComAluno {
         javaColecoes.matricula(a3);
 
         javaColecoes.getAlunos().forEach(System.out::println);
+        System.out.println("----------");
+        Aluno alunoParaPesquisa = new Aluno("Vitor Albano", 57831);
+        System.out.println(javaColecoes.estaMatriculado(alunoParaPesquisa));
     }
 }
