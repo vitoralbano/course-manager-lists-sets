@@ -3,7 +3,7 @@ package gerenciador.cursos;
 import java.time.OffsetDateTime;
 import java.util.Objects;
 
-public class Recibo implements Comparable{
+public class Recibo implements Comparable<Recibo>{
     private OffsetDateTime dateTime;
 
     public OffsetDateTime getDateTime() {
@@ -24,7 +24,7 @@ public class Recibo implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        return 0;
+    public int compareTo(Recibo o) {
+        return dateTime.compareTo(o.getDateTime());
     }
 }
